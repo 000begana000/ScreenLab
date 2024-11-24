@@ -3,6 +3,40 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid black;
+  border-bottom: 4px solid black;
   font-family: "Hind", sans-serif;
+  padding-top: 1rem;
+}
+
+.logo p {
+  font-size: 2.3rem;
+  font-weight: 500;
+  padding-left: 2rem;
+}
+
+.logo a {
+  text-decoration: none;
+  color: black;
+}
+
+.userAction {
+  margin-right: 2rem;
+}
+
+.search {
+  width: 10rem;
+  height: 2rem;
+  border: 4px solid black;
+  border-radius: 22px;
+}
+
+.login,
+.language {
+  padding: 0.2rem 1rem;
+  margin-left: 0.5rem;
+  border: 4px solid black;
+  background-color: white;
+  font-family: "Hind", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
 }
