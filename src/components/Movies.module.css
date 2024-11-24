@@ -6,3 +6,13 @@
   font-size: 2.5rem;
   padding-left: 2rem;
 }
+
+.programs span {
+  margin: 0 2rem;
+}
+
+.programs a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
