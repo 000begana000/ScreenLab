@@ -1,0 +1,8 @@
+.programs {
+  height: 10vh;
+  border-bottom: 2px solid black;
+  display: flex;
+  align-items: flex-end;
+  font-size: 2.5rem;
+  padding-left: 2rem;
+}
