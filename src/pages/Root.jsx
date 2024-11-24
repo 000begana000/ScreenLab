@@ -6,9 +6,9 @@ export default function RootLayout() {
   return (
     <>
       <MainNaviation />
-      <div className="container">
+      <main>
         <Outlet />
-      </div>
+      </main>
     </>
   );
 }
