@@ -1,9 +1,9 @@
 .hero {
-  height: 80vh;
-  border: 2px solid blue;
+  height: 78vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: grey;
 }
 
 .container {
