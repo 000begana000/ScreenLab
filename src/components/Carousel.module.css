@@ -1,0 +1,13 @@
+.hero {
+  height: 70vh;
+  border: 2px solid blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  border: 1px solid red;
+  width: 90vw;
+  height: 60vh;
+}

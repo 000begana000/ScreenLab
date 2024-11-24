@@ -1,9 +1,11 @@
+import classes from "./Carousel.module.css";
+
 export default function Carousel() {
   return (
-    <section className="hero">
-      <div className="carousel">
-        <p>Carousel</p>
+    <div className={classes.hero}>
+      <div className={classes.container}>
+        <p>Caroussel</p>
       </div>
-    </section>
+    </div>
   );
 }
