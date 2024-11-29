@@ -8,11 +8,12 @@ import classes from "./Home.module.css";
 export default function HomePage() {
   const data = useLoaderData();
   console.log(data);
+
   return (
     <>
       <Carousel />
       <div className={classes.container}>
-        <Movies />
+        <Movies movies={data.results} />
       </div>
     </>
   );

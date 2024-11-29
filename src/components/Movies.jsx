@@ -1,6 +1,6 @@
 import classes from "./Movies.module.css";
 
-export default function Movies() {
+export default function Movies({ movies }) {
   return (
     <>
       <div className={classes.programs}>
@@ -8,7 +8,15 @@ export default function Movies() {
         <span>/</span>
         <a href="#">coming soon</a>
       </div>
-      <div className="movies"></div>
+      <div className="movies">
+        <ul>
+          {movies.map((movie) => (
+            <li key={movie.backdrop_path}>
+              <p>{movie.title}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
     </>
   );
 }
