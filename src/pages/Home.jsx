@@ -5,6 +5,8 @@ import Movies from "../components/Movies.jsx";
 
 import classes from "./Home.module.css";
 
+const apiKey = import.meta.env.VITE_API_KEY;
+
 export default function HomePage() {
   const data = useLoaderData();
   console.log(data);
@@ -21,7 +23,7 @@ export default function HomePage() {
 
 export async function loader() {
   const response = await fetch(
-    "https://api.themoviedb.org/3/movie/now_playing?api_key=1653b415dad054c42a306ec41cc9f94d"
+    `https://api.themoviedb.org/3/movie/now_playing?api_key=${apiKey}`
   );
 
   if (!response.ok) {
