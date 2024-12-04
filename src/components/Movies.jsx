@@ -1,4 +1,7 @@
+import Movie from "../UI/Movie.jsx";
+
 import classes from "./Movies.module.css";
+// https://media.themoviedb.org/t/p/w440_and_h660_face/aTpMwcMzgwUfs5mY8WJEhBn7Q7y.jpg
 
 export default function Movies({ movies }) {
   return (
@@ -11,9 +14,7 @@ export default function Movies({ movies }) {
       <div className="movies">
         <ul>
           {movies.map((movie) => (
-            <li key={movie.backdrop_path}>
-              <p>{movie.title}</p>
-            </li>
+            <Movie key={movie.id} movie={movie} />
           ))}
         </ul>
       </div>
