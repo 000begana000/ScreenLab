@@ -1,7 +1,8 @@
+import { Link } from "react-router-dom";
+
 import Movie from "../UI/Movie.jsx";
 
 import classes from "./Movies.module.css";
-// https://media.themoviedb.org/t/p/w440_and_h660_face/aTpMwcMzgwUfs5mY8WJEhBn7Q7y.jpg
 
 export default function Movies({ movies }) {
   return (
@@ -14,7 +15,11 @@ export default function Movies({ movies }) {
       <div className="movies">
         <ul>
           {movies.map((movie) => (
-            <Movie key={movie.id} movie={movie} />
+            <li key={movie.id}>
+              <Link to={`movie/${movie.id}`} relative="end">
+                <Movie movie={movie} />
+              </Link>
+            </li>
           ))}
         </ul>
       </div>
