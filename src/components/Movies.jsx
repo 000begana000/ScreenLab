@@ -15,11 +15,9 @@ export default function Movies({ movies }) {
       <div className="movies">
         <ul>
           {movies.map((movie) => (
-            <li key={movie.id}>
-              <Link to={`movie/${movie.id}`} relative="end">
-                <Movie movie={movie} />
-              </Link>
-            </li>
+            <Link key={movie.id} to={`movie/${movie.id}`} relative="end">
+              <Movie movie={movie} />
+            </Link>
           ))}
         </ul>
       </div>
