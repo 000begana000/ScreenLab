@@ -40,3 +40,25 @@
   font-size: 1.1rem;
   font-weight: 500;
 }
+
+@media only screen and (max-width: 450px) {
+  .logo p {
+    font-size: 1.5rem;
+    padding-left: 1rem;
+  }
+
+  .userAction {
+    margin-right: 1rem;
+  }
+
+  .login,
+  .language {
+    font-size: 0.8rem;
+    padding: 0.1rem 1rem;
+  }
+
+  .search {
+    width: 2rem;
+    height: 1.4rem;
+  }
+}

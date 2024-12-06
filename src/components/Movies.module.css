@@ -16,3 +16,25 @@
   color: black;
   text-transform: uppercase;
 }
+
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 450px) {
+  .programs {
+    font-size: 1.5rem;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .movies {
+    padding: 1.5rem;
+  }
+
+  .movies a {
+    flex: 1 1 33.33333%;
+  }
+}

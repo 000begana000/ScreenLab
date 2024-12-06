@@ -12,14 +12,12 @@ export default function Movies({ movies }) {
         <span>/</span>
         <a href="#">coming soon</a>
       </div>
-      <div className="movies">
-        <ul>
-          {movies.map((movie) => (
-            <Link key={movie.id} to={`movie/${movie.id}`} relative="end">
-              <Movie movie={movie} />
-            </Link>
-          ))}
-        </ul>
+      <div className={classes.movies}>
+        {movies.map((movie) => (
+          <Link key={movie.id} to={`movie/${movie.id}`} relative="end">
+            <Movie movie={movie} />
+          </Link>
+        ))}
       </div>
     </>
   );
