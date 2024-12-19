@@ -7,7 +7,8 @@ import classes from "./Movies.module.css";
 export default function Movies({ movies }) {
   return (
     <>
-      <div className={classes.programs}>
+      <h1 className={classes.program}>What's on</h1>
+      <div className={classes.tabs}>
         <a href="#">now</a>
         <span>/</span>
         <a href="#">coming soon</a>
